@@ -1,0 +1,9 @@
+[mailer]
+server = "ssl://smtp.qq.com"
+port = "465"
+username = "476837464@qq.com"
+password = "tzrsupnjkaanbhjg"
+subject = "测试"
+from = "476837464@qq.com"
+to = "476837464@qq.com"
+body = "这是一封测试邮件"

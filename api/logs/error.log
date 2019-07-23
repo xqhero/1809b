@@ -1,0 +1,512 @@
+[26-Jun-2019 02:40:47 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:40:47 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): unable to connect to :0 (�����������У�������ĵ�ַ��Ч��
+) in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client(':0', 10049, '\xD4\xDA\xC6\xE4\xC9\xCF\xCF\xC2\xCE\xC4\xD6\xD0\xA3\xAC\xB8...', 30, 4, Resource id #116)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Sw in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 02:41:48 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:42:18 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 162
+[26-Jun-2019 02:43:01 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:43:31 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 162
+[26-Jun-2019 02:45:00 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:45:02 UTC] PHP Fatal error:  Uncaught Swift_TransportException: Cannot send message without a sender address in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php:195
+Stack trace:
+#0 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(71): Swift_Transport_AbstractSmtpTransport->send(Object(Swift_Message), Array)
+#1 D:\lening\1810b\api\libs\Autoload.class.php(81): Swift_Mailer->send(Object(Swift_Message))
+#2 D:\lening\1810b\api\libs\Autoload.class.php(96): Autoload->exceptionHandler(Object(ErrorException))
+#3 [internal function]: Autoload->shutdownHandler()
+#4 {main}
+  thrown in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php on line 195
+[26-Jun-2019 02:47:53 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:47:53 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:48:11 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:48:11 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:48:30 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:48:31 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\libs\Autoload.class.php on line 67
+[26-Jun-2019 02:48:57 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:49:19 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:54:01 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:54:14 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:54:51 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:56:15 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 02:56:15 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined offset: 3 in D:\lening\1810b\api\functions\common.php:53
+Stack trace:
+#0 D:\lening\1810b\api\functions\common.php(53): Autoload->errorHandler(8, 'Undefined offse...', 'D:\\lening\\1810b...', 53, Array)
+#1 D:\lening\1810b\api\libs\Autoload.class.php(60): sendMail('a', 'B', 'c')
+#2 D:\lening\1810b\api\libs\Autoload.class.php(75): Autoload->exceptionHandler(Object(ErrorException))
+#3 [internal function]: Autoload->shutdownHandler()
+#4 {main}
+  thrown in D:\lening\1810b\api\functions\common.php on line 53
+[26-Jun-2019 03:06:54 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\functions\common.php on line 63
+[26-Jun-2019 03:07:22 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\functions\common.php on line 63
+[26-Jun-2019 03:07:32 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\functions\common.php on line 63
+[26-Jun-2019 03:07:32 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\lening\1810b\api\functions\common.php on line 63
+[26-Jun-2019 03:07:53 UTC] PHP Parse error:  syntax error, unexpected ''text/html'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in D:\lening\1810b\api\functions\common.php on line 73
+[26-Jun-2019 03:07:53 UTC] PHP Parse error:  syntax error, unexpected ''text/html'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in D:\lening\1810b\api\functions\common.php on line 73
+[26-Jun-2019 03:08:07 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 03:08:07 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: port in D:\lening\1810b\api\functions\common.php:54
+Stack trace:
+#0 D:\lening\1810b\api\functions\common.php(54): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 54, Array)
+#1 D:\lening\1810b\api\libs\Autoload.class.php(60): sendMail('Uncaught ErrorE...', '\xE7\xB3\xBB\xE7\xBB\x9F\xE5\x8F\x91\xE7\x94\x9F\xE9\x94\x99...')
+#2 D:\lening\1810b\api\libs\Autoload.class.php(75): Autoload->exceptionHandler(Object(ErrorException))
+#3 [internal function]: Autoload->shutdownHandler()
+#4 {main}
+  thrown in D:\lening\1810b\api\functions\common.php on line 54
+[26-Jun-2019 03:08:46 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 03:09:07 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 03:10:16 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96
+[26-Jun-2019 03:44:45 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:44:45 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:44:56 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:44:56 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:10 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:10 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:24 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:24 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:24 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:45:24 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[26-Jun-2019 03:46:34 UTC] PHP Notice:  Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19
+[26-Jun-2019 03:46:34 UTC] PHP Notice:  Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19
+[26-Jun-2019 03:46:55 UTC] PHP Notice:  Undefined index: PATHINFO in D:\lening\1810b\api\libs\Route.class.php on line 19
+[26-Jun-2019 03:46:55 UTC] PHP Notice:  Undefined index: PATHINFO in D:\lening\1810b\api\libs\Route.class.php on line 19
+[26-Jun-2019 04:08:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:102
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 102
+[26-Jun-2019 04:09:03 UTC] PHP Fatal error:  Uncaught Error: Class 'controllers\AController' not found in D:\lening\1810b\api\public\index.php:38
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 38
+[26-Jun-2019 04:35:58 UTC] PHP Notice:  Undefined offset: 4 in D:\lening\1810b\api\libs\Route.class.php on line 53
+[26-Jun-2019 05:34:30 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in D:\lening\1810b\api\libs\Route.class.php on line 70
+[26-Jun-2019 05:40:37 UTC] PHP Parse error:  syntax error, unexpected '"#^/(\w+)/(\d+)$#"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in D:\lening\1810b\api\libs\Route.class.php on line 86
+[26-Jun-2019 11:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'controllers\StudentController' not found in D:\lening\1810b\api\public\index.php:38
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 38
+[26-Jun-2019 11:00:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:102
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 102
+[26-Jun-2019 11:00:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method controllers\UploadController::actionIndex() in D:\lening\1810b\api\public\index.php:38
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 38
+[26-Jun-2019 11:16:50 UTC] PHP Notice:  Undefined offset: 3 in D:\lening\1810b\api\libs\Route.class.php on line 100
+[26-Jun-2019 11:16:50 UTC] PHP Notice:  Undefined offset: 3 in D:\lening\1810b\api\libs\Route.class.php on line 100
+[26-Jun-2019 11:16:50 UTC] PHP Notice:  Undefined offset: 5 in D:\lening\1810b\api\libs\Route.class.php on line 100
+[26-Jun-2019 11:17:37 UTC] PHP Notice:  Undefined offset: 3 in D:\lening\1810b\api\libs\Route.class.php on line 100
+[26-Jun-2019 11:19:59 UTC] PHP Notice:  Undefined offset: 3 in D:\lening\1810b\api\libs\Route.class.php on line 101
+[26-Jun-2019 11:19:59 UTC] PHP Notice:  Undefined offset: 3 in D:\lening\1810b\api\libs\Route.class.php on line 101
+[26-Jun-2019 11:19:59 UTC] PHP Notice:  Undefined offset: 5 in D:\lening\1810b\api\libs\Route.class.php on line 101
+[26-Jun-2019 11:21:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:102
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(40): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 102
+[26-Jun-2019 11:21:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:102
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(40): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 102
+[26-Jun-2019 11:21:47 UTC] PHP Fatal error:  Uncaught Error: Class 'controllers\PController' not found in D:\lening\1810b\api\public\index.php:40
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 40
+[26-Jun-2019 11:35:42 UTC] PHP Notice:  Undefined index: QUERY_URI in D:\lening\1810b\api\controllers\RestfulController.class.php on line 30
+[26-Jun-2019 11:36:01 UTC] PHP Notice:  Undefined index: QUERY_URI in D:\lening\1810b\api\controllers\RestfulController.class.php on line 30
+[27-Jun-2019 00:53:30 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 00:53:30 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 00:54:42 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 00:54:42 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 00:54:44 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 00:54:44 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #117)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:52:15 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:52:15 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:52:47 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:52:47 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:07 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:07 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:47 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:47 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:48 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:53:48 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:54:35 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:54:35 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:54:41 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #115)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:54:41 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #118)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 01:55:09 UTC] PHP Notice:  Undefined variable: controller in D:\lening\1810b\api\libs\Route.class.php on line 98
+[27-Jun-2019 01:55:09 UTC] PHP Notice:  Undefined variable: action in D:\lening\1810b\api\libs\Route.class.php on line 98
+[27-Jun-2019 01:59:12 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST) in D:\lening\1810b\api\libs\Route.class.php on line 123
+[27-Jun-2019 02:00:31 UTC] PHP Notice:  Undefined variable: pathinfo in D:\lening\1810b\api\libs\Route.class.php on line 113
+[27-Jun-2019 02:06:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:102
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(40): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 102
+[27-Jun-2019 02:07:58 UTC] PHP Fatal error:  Uncaught Error: Class 'controllers\StudentController' not found in D:\lening\1810b\api\public\index.php:40
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 40
+[27-Jun-2019 02:08:17 UTC] PHP Fatal error:  Uncaught Error: Class 'controllers\StudentController' not found in D:\lening\1810b\api\public\index.php:40
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 40
+[27-Jun-2019 02:42:23 UTC] PHP Parse error:  syntax error, unexpected ')' in D:\lening\1810b\api\libs\Response.class.php on line 32
+[27-Jun-2019 02:42:41 UTC] PHP Fatal error:  Uncaught Error: Class 'libs\SimpleXMLElement' not found in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#1 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#2 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#3 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:42:53 UTC] PHP Fatal error:  Uncaught ArgumentCountError: SimpleXMLElement::__construct() expects at least 1 parameter, 0 given in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\libs\Response.class.php(27): SimpleXMLElement->__construct()
+#1 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#2 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#3 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#4 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:43:22 UTC] PHP Fatal error:  Uncaught TypeError: SimpleXMLElement::__construct() expects parameter 1 to be string, array given in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\libs\Response.class.php(27): SimpleXMLElement->__construct(Array)
+#1 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#2 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#3 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#4 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:43:44 UTC] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\libs\Response.class.php(27): SimpleXMLElement->__construct('')
+#1 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#2 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#3 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#4 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:42 UTC] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 1: parser error : Premature end of data in tag students line 1 in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:42 UTC] PHP Warning:  SimpleXMLElement::__construct(): &lt;students&gt; in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:42 UTC] PHP Warning:  SimpleXMLElement::__construct():           ^ in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:42 UTC] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\libs\Response.class.php(27): SimpleXMLElement->__construct('<students>')
+#1 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#2 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#3 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#4 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:57 UTC] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:57 UTC] PHP Warning:  SimpleXMLElement::__construct(): students in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:57 UTC] PHP Warning:  SimpleXMLElement::__construct(): ^ in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:44:57 UTC] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in D:\lening\1810b\api\libs\Response.class.php:27
+Stack trace:
+#0 D:\lening\1810b\api\libs\Response.class.php(27): SimpleXMLElement->__construct('students')
+#1 D:\lening\1810b\api\controllers\StudentController.class.php(13): libs\Response::restfulResponse(200, 'ok', Array)
+#2 D:\lening\1810b\api\controllers\RestfulController.class.php(14): controllers\StudentController->list()
+#3 D:\lening\1810b\api\public\index.php(40): controllers\RestfulController->actionIndex()
+#4 {main}
+  thrown in D:\lening\1810b\api\libs\Response.class.php on line 27
+[27-Jun-2019 02:45:31 UTC] PHP Notice:  Undefined variable: xml in D:\lening\1810b\api\libs\Response.class.php on line 29
+[27-Jun-2019 02:55:49 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #122)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 02:55:49 UTC] PHP Fatal error:  Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #125)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267
+[27-Jun-2019 03:35:33 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\lening\1810b\api\libs\Model.class.php on line 56
+[27-Jun-2019 03:40:00 UTC] PHP Notice:  Undefined offset: 1 in D:\lening\1810b\api\libs\Route.class.php on line 90

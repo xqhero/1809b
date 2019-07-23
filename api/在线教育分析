@@ -1,0 +1,101 @@
+数据表：
+
+ 	分类   一个分类对应多个课程
+ 	课程   一门课程对用一个分类
+ 	章节   一门课程多个章节  一个章节只能属于一个课程
+
+
+ 	用户   未登录只能展示课程，不能看视频  登录后可以看视频并且能够记录当前视频看到什么位置了  然后该用户看过的时长有一个汇总
+
+
+ 1. 分类表
+
+ 	id  分类id       主键
+ 	catname  分类名称
+ 	pid 分类父id
+ 	courses: 当前分类下的课程数量
+ 	ctime 创建时间
+ 	utime 更新时间
+ 	status 状态
+
+2. 课程表
+	
+	courseid  课程id     主键
+	catid	  课程分类id
+	uid	      课程录制者id
+	degree    enum("入门","初级","中级","高级")
+	cname     课程名称
+	desp	  课程简介
+	duration  课程总的时长，精确到分钟
+	prepare	  课前准备
+	knowledge 该课程能学到什么
+	chapters  该课程的章节数
+	ctime 
+	utime
+	status
+
+
+3. 章节表
+
+	chapterid 章节id    主键
+	pid       父id
+	courserid  课程id   
+	desp      简介
+	type      enum("章","小节")
+	videoUrl  视频地址
+	duration  视频时长
+	ctime
+	utime
+	status
+
+
+
+
+4. 课程用户学习记录表
+	
+	courseid  课程id   主键
+	uid       用户id   主键
+	chapterid 章节id   主键
+	lastposition 用户看到视频的哪个位置
+
+
+5. 用户表
+
+	uid  用户id    主键
+	username 用户名  唯一索引
+	password 密码
+	mobile   手机号
+	email    邮箱
+	avatar   头像地址
+	profile  简介
+	studyduration 学习时长
+	ctime
+	utime
+	status
+	from  来源于QQ/wechat/github
+	accout 用户的第三方账号
+
+
+写创建表的sql:
+
+
+	create table category (
+		catid tinyint unsigned auto_increment comment '分类id',
+		catname char(100) not null  comment '分类名称',
+		pid  tinyint unsigned default 0 comment '父类id',
+		courses int not null default 0 comment '该分类下的课程数量',
+		ctime int default 0,
+		utime int default 0,
+		status enum('正常','禁用'),
+		primary key(catid)
+	) engine=innodb default charset=utf8mb4;
+
+
+
+
+
+
+
+
+
+

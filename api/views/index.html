@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascrip 发起http请求</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<style type="text/css">
+		#imgs{
+			margin-top: 10px;
+		}
+		#imgs img{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #f1f1f1;
+			border-radius: 6px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+<form action="http://www.apitest.com/index.php?c=upload&a=upload" method="post" id="myform">
+	<input type="text" name="username">
+	<input type="file" name="file[]" multiple="multiple" accept="image/*">
+	<button type="button">我要湿啦...</button>
+</form>
+<div id="imgs">
+	
+</div>
+<script>
+
+
+$(function(){
+
+	var imgs = $('#imgs');
+	var file = $('input[type="file"]');
+
+	file.change(function(e){
+
+		var fileList = this.files;
+		for(var i=0;i<fileList.length;i++){
+			var reader = new FileReader();
+
+			reader.onload = function(evt){
+				var src = evt.target.result;
+				imgs.append("<img src='"+src+"'>");
+			}
+			reader.readAsDataURL(fileList[i]);
+		}
+	});
+
+	var btn = $('button');
+	
+	btn.click(function(e){
+
+		//var file = $("input[type='file']")[0].files[0];
+		//console.log(file);
+		var myform = $("#myform")[0];
+		var formData = new FormData(myform);
+		//formData.append('file[]',file[0].files);
+		//console.log(formData);
+
+
+
+		$.ajax({
+
+			url: "http://www.api.com/index.php?c=upload&a=upload",
+			type: 'post',
+			data: formData,
+			processData: false, // 告诉ajax不要将数据处理成&连接字符串
+			async: true, 
+			contentType: false, // 告诉ajax不要设置默认的Content-Type这个header头
+			success: function(data){
+				console.log(data);
+				return;
+				data = JSON.parse(data);
+				//console.log(data);
+				//imgs.append("<img src='"+data.data.savePath+'/'+data.data.filename+"'>");
+				console.log(data);
+			},
+			error : function(error){
+				console.log(error);
+			}
+		});
+
+	});
+
+})
+
+
+</script>
+
+<script src="http://www.api.com/index.php?c=front&a=js&callback=demo"></script>
+</body>
+</html>

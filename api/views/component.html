@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文件上传插件</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin:0 ;
+			padding: 0;
+		}
+		#container{
+			padding: 20px;
+		}
+		input[type='file'] {
+			display: none;
+		}
+		.btn{
+			width: 100px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border: none;
+			border-radius: 4px;
+			background-color: #ea4335;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.btn-upload {
+			background-color: #34a853;
+
+		}
+
+		#previewlist{
+			width: 100%;
+			min-height: 500px;
+			margin-top: 20px;
+			/*border: 1px solid #aaa;*/
+			padding: 10px;
+			
+		}
+		#previewlist .li{
+			float: left;
+			padding: 10px;
+			margin-right: 10px;
+			width: 300px;
+			height: 400px;
+			position: relative;
+		}
+		#previewlist .li img{
+			max-width:300px;
+			max-height: 400px;
+			padding: 8px;
+			border: 1px solid #f1f1f1; 
+		}
+		#previewlist .li img:hover{
+			background: #999;
+		}
+		#previewlist .li i{
+			
+			font-style: normal;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			top: 10px;
+			right: 10px;
+			background-color: rgba(0,0,0,0.5);
+			color: #ea4335;
+			border-radius: 15px;
+			font-size: 18px;
+			cursor: pointer;
+			display: none;
+		}
+		#previewlist .li .tip{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+			top: 0;
+			left: 0px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.clear{
+			width: 0px;
+			height: 0px;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<input type="file" name="file" multiple />
+	<button class="btn btn-choose">选择文件</button>
+	<button class="btn btn-upload">上传</button>
+
+	<div id="previewlist">
+	</div>
+</div>
+<script type="text/javascript" src="statics/js/jquery.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		// 自定义一个存储上传的文件对象数组
+		var uploadFiles = [];
+		// 自定义一个已经上传成功的文件对象数组
+		var uploadedFiles = [];
+
+		// 成功上传的个数
+		var success = 0;
+		// 上传失败的个数
+		var failure = 0;
+		// 当前待上传的文件
+		var uploadNum = 0;
+        
+
+		var btnChoose = $(".btn-choose");
+		var btnUpload = $(".btn-upload");
+		var input = $("input[type='file']");
+		var previewlist = $("#previewlist");
+
+
+		btnChoose.click(function(ent){
+			// 调用文件控件的点击事件弹出文件选择对话框
+			input.click();
+		});
+
+		input.change(function(ent){
+				var filelist = this.files;
+
+				for(var i=0;i<filelist.length;i++){
+					preview(filelist[i]);
+				}
+		});
+
+		function preview(file){
+			reader = new FileReader();
+			reader.onload = function(e){
+				uploadNum++;
+				addPreview(e.target.result);
+				uploadFiles.push(file);
+			}
+			reader.readAsDataURL(file);
+		}
+
+		function addPreview(src){
+
+			var html = '<div class="li"><img src="' + src + '"><i>x</i><div class="tip">上传成功</div></div>';
+
+			previewlist.append(html);
+		}
+
+		btnUpload.click(function(e){
+			console.log(uploadFiles);
+			if(uploadNum < 1){
+				alert("你尚未选择文件");
+				return;
+			}
+			var num = uploadedFiles.length;
+			for(var i=0;i<uploadNum;i++){
+				upload(uploadFiles[i],i,num);
+			}
+		});
+
+		function upload(file,index,num){
+			var formData = new FormData();
+			formData.append('file',file);
+			$.ajax({
+
+				url: "http://www.api.com/index.php?c=upload&a=upload",
+				type: "post",
+				data : formData,
+				processData: false,
+				contentType: false,
+				success: function(data){
+					data = JSON.parse(data);
+					if(data.code == 1008){
+						// 将上传成功的图片显示div
+						success ++;		
+						// 得到元素将里面的div启用
+						var position = num + index;
+						var dom = previewlist.children('.li').eq(position).find(".tip").show();
+						uploadedFiles.push(uploadFiles[index]);
+						uploadFiles.splice(index,1);
+						uploadNum--;
+					}else{
+						// 将上传成功的图片显示失败
+						failure++;
+					}
+				},
+				error: function(err){
+					alert("哥哥，差错啦");
+				}
+			});
+		}
+
+		previewlist.on("mouseover",".li",function(e){
+			//$(this).find('img').addClass("");
+			$(this).find('i').show();
+		});
+		previewlist.on("mouseout",".li",function(e){
+			//$(this).find('img').addClass("");
+			$(this).find('i').hide();
+		});
+
+		previewlist.on("click",".li i",function(e){
+			
+			var index = previewlist.find(".li").index($(this).parent());
+			var num = uploadedFiles.length;
+			// 移除元素
+			$(this).parent().remove();
+			// 删除uploadFiles数组中文件对象
+			uploadFiles.splice(index-num,1);
+			// 待上传数量减1
+			uploadNum--;
+		});
+		
+		
+	});
+
+</script>
+</body>
+</html>

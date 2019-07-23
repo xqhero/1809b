@@ -1,0 +1,378 @@
+1. http报文
+
+通用格式
+
+	起始行\r\n
+	报文首部\r\n
+	\r\n
+	报文实体
+
+分为请求报文和响应报文
+
+	a. 请求报文
+
+		请求行\r\n
+		请求首部(头)\r\n
+		\r\n
+		内容
+
+	请求行：GET(请求方式) /index.php?username=zhangsan&password=123456(资源地址) HTTP(协议)/1.1(版本)    
+	请求首部：
+	Host: www.apitest.com     主机名称
+	Connection: keep-alive    是否使用长连接   keep-alive保持一定时间的长连接
+	Pragma: no-cache          缓存
+	Cache-Control: no-cache   缓存 
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36   代理信息
+	Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3  我能接收的文件类型
+	Accept-Encoding: gzip, deflate    我能接收的文件压缩格式
+	Accept-Language: zh-CN,zh;q=0.9   我能接收的语言
+	Cookie: bdshare_firstime=1558670267036  我的cookie是多少
+
+	
+	请求行: POST  /index.php?c=user&a=login  HTTP/1.1
+	请求首部：
+	Host: www.apitest.com  
+	Connection: keep-alive
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 10(内容部分的长度)
+	Accept: */*
+	Accept-Encoding: gzip,deflate
+	Accept-Language: zh-CN
+
+	username=zhangshan&password=123456
+
+
+	b. 响应报文
+
+		状态行\r\n
+		响应头\r\n
+		\r\n
+		响应实体
+
+	状态行：HTTP/1.1 200(状态码/错误码/返回码) OK(状态码描述)
+	响应头：
+	Date: Tue, 11 Jun 2019 01:07:24 GMT（时间）
+	Server: Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9(服务器环境)
+	X-Powered-By: PHP/7.2.1 （对应php版本）
+	Keep-Alive: timeout=5, max=100  （是否保持长连接）
+	Connection: Keep-Alive  （是否保持长连接）
+	Transfer-Encoding: chunked   (传输的方式)
+	Content-Type: text/html; charset=UTF-8  （返回的数据格式和编码格式）
+
+	{"code":400,"message":"Bad Request","data":[]}
+
+
+
+
+	POST /index.php?c=test&a=post HTTP/1.1
+	Host: www.apitest.com
+	Content-type: application/x-www-form-urlencoded
+	Content-length: 3
+
+	b=2
+
+
+	请求行：
+		请求方法  资源地址  协议/版本
+
+	    a. 请求方法  7种
+	    	GET  发送get请求          查询数据
+	    	POST 一般有数据的发送     新增数据
+	    	PUT  修改数据
+	    	DELETE  删除数据
+	    	OPTIONS 当前服务器支持哪些请求方法
+	    	TRACE   跟踪服务器的路由请求
+	    	HEAD   只返回响应后
+
+	    b. 资源地址
+	    	http://www.apitest.com/index.php?c=test&a=post#c
+
+	    	#c 名称为c的锚点
+
+	    c. 协议/版本
+	    	HTTP  1.0 1.1 2.0 目前常见的是1.1  BAT使用的2.0
+
+	状态行：
+
+		协议/版本  状态码   状态描述
+		状态码：
+			1XX: 消息
+			2XX: 成功
+			3XX: 重定向
+			4XX: 客户端错误
+			5XX: 服务器错误
+
+
+	请求头：
+
+		跟发送数据相关的请求头
+		Content-type:
+		html: text/html
+		1. application/x-www-form-urlencoded
+
+			username=zhangsan&password=123456&submit=%E7%99%BB%E5%BD%95
+
+		2. multipart/form-data	多媒体上传的时候
+
+		3. application/json     传递json格式数据
+
+		4. application/xml      传递xml格式数据
+
+		5. application/octet-stream    传递二进制流
+
+		6. 各种图片类型
+			jpg   image/jpg
+			png   image/png
+			gif   image/gif
+
+
+		Content-Length: 发送内容的长度，这个长度是报文实体部分的长度
+		作用： 解析请求报文的时候才能知道到底读到多少个字节才表示内容结束
+
+
+文件上传：
+
+	1. 封装文件上传类
+
+	2. 学习文件上传的报文以及实现方式
+
+
+php 调用内置方法发送HTTP请求：
+
+	1. CURL   
+	2. fopen
+
+		post put delete 需要设置资源上下文
+		$context = stream_context_create($options);
+
+		$options 资源上下文的可选项
+
+			method ： 请求方法
+			header ： 请求header头
+			content： 内容
+
+	3. file
+	4. file_get_contents
+	5. fsockopen   发起的是HTTP请求连接  host不需要指定协议
+	6. stream_socket_client  发起的是tcp连接 host一定要指定协议
+
+
+javascript 如何发起http请求以及解析各种数据
+
+	1. 如何发起请求
+
+		CORS : 跨域资源共享 
+
+			同源策略： 协议  域名(主机地址)  端口号
+
+					http://www.apitest.com:80
+					https://www.apitest.com:80
+
+
+		a. 如何解决CORS
+
+			在服务器端写入header头
+
+				Access-Control-Allow-Origin: 允许访问的来源列表
+
+				Access-Control-Allow-Origin: * 所有的
+				Access-Control-Allow-Origin: http://www.apitest.com
+
+				Access-Control-Allow-Method: 允许的请求方法
+
+				Access-Control-Allow-Method： 默认包含HEAD,GET,POST
+				Access-Control-Allow-Method: GET,POST
+
+		b. 浏览器提供的其他方法
+
+			src、href、iframe、video、audio
+
+		   jsonp：利用浏览器给我们提供的跨域的script标签src属性实现jsonp
+
+		         php文件返回js代码即可
+
+		c. iframe 实现无刷新文件上传
+
+	2. 如何解析各种数据
+
+		json: 
+			JSON.parse 将json字符串转换成json对象
+			JSON.stringify 将json对象编码成json字符串
+
+		xml: js如何来解析xml格式数据
+
+			var xmlDom = new DOMParser();
+			xmlDom = xmlDom.parseFromString(data,"text/xml");
+
+			// 获取指定tag标签的所有节点
+			xmlDom.getElementsByTagName
+			// 获取属性
+			xmlDom.getAttribute
+
+	3. 如何使用js实现文件大文件/无刷新调用上传接口
+
+		1. iframe 
+		2. ajax
+
+			a. h5 FormData   var formData = new FormData()
+			b. ajax注意设置两个选项
+
+				processData: 告诉ajax不要处理数据
+				contentType: 告诉ajax不要设置header头
+
+			c. 上传前预览
+				var reader = new FileReader();
+				reader.onload = function(e){
+					res = e.target.result;
+				}
+				reader.readAsDataURL(file);
+
+	4. 类似于上传插件的文件上传功能
+
+
+		
+	解析Header头
+
+		传递token ：
+			1. 普通方式，直接在header头中加上Authorization
+			2. 使用Bearer token 方式
+				此时传递的Authorization内容的格式为：
+					Bearer token
+				例如：
+				Bearer eyJpdiI6InhqeWwwamhaNEE2SW83cnVKUGE0OEE9PSIsInZhbHVlIjoiUnZcL3paU1JFdndIWmxDcTFlOWZhNmFuaUw2bmpZdW9XT2RCQ1NrYWdhQUR3SDJ3b2hQblBpZlE3dXJXUmpBbDlQRzJ3eVF3ME9SQWxPOEt2YUN2RTRmMTlkYmg1YU1yd3RKWjY3R2ZtZ2JoR0VhOUd2QlQxY1VLYkZpVXVZTlRrUzdoTXBFa2JjVDRpSDRWVm53WDJrSDQ0Tlhkc215VUI1YmZ6cUQzOWhRRENyOE9UR3lXSlNmNXlRVjZxRTMrUENIQlc4UVBrQnhrdTk1Rkg3RU1IcTJiRlBZTUVjOEJNa05MQ1NLTTdJdHpOY2RmV25Jd1BYVVg1MVhWeVAySlEzMklqZnhvR3pyUStpU0dlR2V2QVhqSFwvNVwvSWRGOFpRMmhQUnBFbExScXVyZHFtRzZBRXQzM0hjb1dvRUdHampEcTVSVkIySmVCVHNsalwvTm5FWjFuSml1QTdHYk92NDZcL0FZUW5BRmNBNVFkaTRySHFldEVyckxSbTM3KzFiRXJERVFCKzYrMm05SWdDNitNTndtN1dsNDhaMmowQVdGdHBrbFJaMEJySmIxZFwvcmNqVHBFZEhMK0tVcVc0WUx6SmVVb2wxc3hXVTJIMHoyT3dKWDBDcVRFM09rRGpUZmVKNUIwQ0tNT21LKytQU0tNNHIyZGZPMlNLUlNjbzI2MFwvblBmT2premJuYTQ3dXlLUWFqYm1qRE9tZzZOXC93WDRlajUyM3UyOHNpMEV5UXN4S1ZlQnhtMmJoWUhCeTk1UnlcL25rN2hnYzF1NmJnMERxNWF1NFlcL3Q5VldZVXZWQWttVDhXZytlYW1ZVGxkazZHMnYrVFFZdXBRM0YrUW9NOUciLCJtYWMiOiI4YzcwMzEwN2IzYjhhZTI0ZTQxM2U4MWI0Nzk2YTM0NDgzNTM2OTZjZTEwNzZhNTMyODVmMmE3MjRlMGQ0MDkxIn0=
+
+				需要将Bearer去掉才是真正的token
+
+
+	CURL 设置header头：
+		curl_setopt(CURLOPT_HTTPHEADER,["x-api-token: 12345","Authorization: 123456"]);
+
+	ajax 设置header头:
+	$.ajax({
+		beforeSend: function(xhr){
+			xhr.setRequestHeader("Authorization","123456");
+		}
+		...
+	});
+
+	$.ajax({
+		header:{
+
+			Authorization: "123456"
+		},
+		....
+	})
+
+	// 重新返回新的xmlHttpRequest
+	$.ajax({
+
+		xhr: function(){
+			var xhr = new XMLHttpRequest();
+			xhr.upload.progress = function(){
+
+			}
+			return xhr;
+		}
+
+	})
+
+
+	Referer: 来源
+	Referer: http://www.apitest.com 
+
+
+	加密解密：
+		移位、置换、异或
+
+	分类：
+
+		1. 散列/hash  单向
+
+		md5 sha1 sha256 hash password_hash  crypt 
+
+		hash_hmac
+
+		2. 对称加密
+			加密和解密使用的密钥是一样的
+			des 3des aes 
+
+			原理：分组，分组方式，组大小
+
+			分组模式：
+				ecb 独立分组
+				cbc 有关联
+
+			openssl_encrypt( string $data, string $method, string $key[, int $options = 0[, string $iv = ""[, string &$tag = NULL[, string $aad = ""[, int $tag_length = 16]]]]] ) : string
+
+			iv 初始化向量
+				跟分组进行异或运算，确保不同分组的密文是不一样的
+				ecb 模式不需要iv  cbc模式才需要
+
+				des cbc模式下为 8字节 
+				aes cbc模式下为 16字节
+
+			Aes-128-模式 Aes-192 Aes-256 数字表示密钥的位长度
+
+			加密密钥无所谓
+			$iv 初始化向量 Aes-128 16字节
+			               Aes-192 24字节
+			               Aes-256 32字节
+
+
+		3. 非对称加密
+			加密和解密使用的密钥是不一样的
+			rsa dsa 
+
+			rsa原理: 
+
+				分解两个大素数的积成两个大素数非常困难
+				公钥： 公开的，(N,publicKey)
+				私钥： 私有的，(N,privateKey)
+
+
+restful:
+	
+	1. uri   get /students  获取所有信息  返回数组
+			 post /students  添加一条信息 返回新创建的对象
+			 put  /students/1  修改id为1的学生信息  返回修改后的对象
+			 delete /students/1 删除id为1的学生信息 返回空文档
+
+	2. 返回数据及格式
+			格式： 通过解析客户端请求头的中Accept得到返回格式
+			数据： get post put 成功返回原始数据 $data
+			       delete 204
+
+			       失败 ["error"=>"失败原因"]
+
+	3. 对应的状态码
+			post 201 
+			delete 204
+			不存在 404
+
+	系统：
+		1. 资源路径(uri)
+		2. HTTP动词
+		3. 过滤信息  ?page= $limit=
+
+	如何设计RESTFUl Api
+		1. 设计资源路径
+		2. 选择HTTP动词
+		3. 设计过滤信息
+			?offset=10 指定返回记录的开始位置
+			?page=2&per_page=10 指定第几页，每页的条数
+			?sortby=name&order=asc :指定返回结果排序，以及排序的规则
+			?name=zhouguoqiang 指定刷选条件
+		4. 统一状态码
+		5. 错误处理
+
+			
+
+
+
+
+
+
+
+
+
+

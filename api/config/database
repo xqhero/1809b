@@ -1,0 +1,5 @@
+[database]
+
+dsn = "mysql:host=127.0.0.1;dbname=students;charset=utf8"
+root = root
+password = 123456

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax发送header头</title>
+	<script type="text/javascript" src="statics/js/jquery.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+$.ajax({
+	beforeSend: function(xhr){
+		xhr.setRequestHeader("Authorization","Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiYXVkaWVuY2VfMSIsImF1ZGllbmNlXzIiXSwiZXhwIjoxNTYxMDA1NDI5LCJpYXQiOjE1NjA5OTgyMjksImlzcyI6Inpob3VndW9xaWFuZyIsImp0aSI6IjEiLCJuYmYiOjE1NjA5OTgyMjksInN1YiI6Imh0dHA6XC9cL3d3dy5hcGl0ZXN0LmNvbSIsInVzZXJfaWQiOiIxIn0.o22oIGgr4kfJYHmoF9Q9AI2-peg63pvAeAXaDrjw3_Q");
+		xhr.setRequestHeader("x-api-token","123456");
+	},
+	url: "http://www.api.com/index.php?c=index&a=display",
+	type: "post",
+	data: {"noncestr":"5Bky07Dg$SvLsxg4BZI8","timestamp":"1560995317","sign":"0ab0d2802c6188d161716ccd4cdee999a57a6647"},
+	async: true,
+	success: function(data){
+		console.log(data);
+	},
+	error: function(err){
+		console.log(err);
+	}
+});
+
+</script>
+</body>
+</html>

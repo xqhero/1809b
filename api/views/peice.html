@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>分片上传实例</title>
+	<link rel="stylesheet" type="text/css" href="statics/css/peice.css">
+	<script src="/statics/js/jquery.js"></script>
+</head>
+<body>
+<div id="container">
+	<input type="file" name="file" multiple="multiple">
+	<button type="button" id="chooseFile" class="btn btn-choose">选择文件</button>
+	<button type="button" id="upload" class="btn">上传</button>
+	<div id="imgs">
+		
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		// 待上传的图片
+		var uploadfiles = [];
+		// 已经上传的文件
+		var uploadedFiles = [];
+		// 上传失败的文件
+		var failedFiles = [];
+		// 获取文件域对象
+		var file = $('input[type="file"]');
+		// 获取存放预览图的对象
+		var imgs = $('#imgs');
+		// 获取选择文件按钮对象
+		var chooseBtn = $('#chooseFile');
+		// 获取上传按钮对象
+		var btn = $('#upload');
+		// 获取实际的表单
+		var form = $('#myform');
+
+
+		function preview(data){
+			var reader = new FileReader();
+
+			reader.onload = function(env){
+				var src = env.target.result;
+				var html = "<div><img src='"+ src +"'><i>x</i><div class='progress'><div></div></div></div>";
+				imgs.append(html);
+				uploadfiles.push(data);
+			}
+
+			reader.readAsDataURL(data);
+		}
+
+		// 给file添加change事件
+		chooseBtn.click(function(ent){
+			file.click();
+		});
+
+		file.change(function(e){
+			var img = this.files;
+			for(var i=0;i<img.length;i++){
+					preview(img[i]);
+			}
+		});
+
+ 
+		imgs.click(function(env){
+			var target = env.target;
+			if(target.nodeName== 'I'){
+				var t = $(target);
+				var p = t.parent();
+				// 得到当前元素是第几个
+				var index = p.index();
+				console.log(index);
+				// 移除图片，同时要移除fileList中的文件对象
+				p.remove();
+				// 删除fileList列表中的索引为index的对象
+				uploadfiles.splice(index,1);
+			}
+		});
+		
+		// 添加按钮事件
+		btn.click(function(ent){
+			uploadfiles.forEach(function(v,k){
+				v.index = k;
+				upload(v);
+			});
+		});
+
+		function upload(file){
+			// 根据文件的大小决定是否使用分片上传
+			var formData = new FormData();
+			formData.append("file",file);
+			$.ajax({
+
+					url: "http://www.api.com/index.php?c=upload&a=upload",
+					type: 'POST',
+					data: formData,
+					async: true,
+					processData: false,
+					contentType: false, 
+					success: function(data){
+						// 弹出上传成功的图片
+						data = JSON.parse(data);
+						if(data.code == 200){
+							uploadedFiles.push(file);
+							uploadfiles.splice(file.index,1);
+						}
+					},
+					error: function(err){
+						console.log(err);
+					},
+					xhr: function() {
+						var xhr = new XMLHttpRequest();
+						xhr.upload.addEventListener('progress', function (e) {
+			                //console.log(e);
+			                //loaded代表上传了多少
+			                //total代表总数为多少
+			                var progressRate = (e.loaded / e.total) * 100 + '%';
+
+			                //通过设置进度条的宽度达到效果
+			                console.log(imgs);
+			                //return;
+			                $("#imgs").children('div').eq(file.index).find('.progress > div').css('width', progressRate);
+			            });
+			            return xhr;
+					},
+			});
+		}
+	})
+
+	
+</script>
+</body>
+</html>

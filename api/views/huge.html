@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大文件分片上传</title>
+	<script src="statics/js/jquery.js"></script>
+</head>
+<body>
+<input type="file" name="files" accept=".rar,.zip">
+<button type="button">上传</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var file = $('input[type="file"]');
+		$("button").click(function(e){
+
+			// 得到内容
+			var f = file[0].files[0];
+			console.log(f);
+			//
+			var chunkSize = 2*1024; // 文件大小为2KB
+			var chunks = Math.ceil(f.size/chunkSize);
+			var currentChunk = 0;
+
+			for(var i=0;i<chunks;i++){
+				var start = i*chunkSize;
+				var end = (start + chunkSize > f.size) ? f.size : start+chunkSize;
+				var peice = f.slice(start,end);
+				var formData = new FormData();
+				// 分片内容
+				formData.append('file',peice);
+				// 
+				// $.ajax({
+
+
+
+
+				// });
+			}
+
+		});
+
+
+
+	});
+</script>
+</body>
+</html>

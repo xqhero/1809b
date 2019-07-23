@@ -1,0 +1,7 @@
+
+
+[qiniu]
+accessKey = CSNQWk5SWesL08CUsBulJ6yaaVNgPYkNHWpaXgnG
+secretKey = nvE0syXWibb1on6nuJ2QzGWT-MP5snCPdcG4jI_9
+bucketName = test
+domain = http://pt2sgiv33.bkt.clouddn.com

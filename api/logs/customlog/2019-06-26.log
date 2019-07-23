@@ -1,0 +1,131 @@
+[time: 2019-06-26 02:08:46][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:34:58][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:39:05][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:40:03][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:40:39][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:40:47][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:41:48][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:43:01][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:45:00][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:48:57][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:49:19][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:54:01][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:54:14][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:54:51][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 02:56:15][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 03:08:07][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 03:08:46][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 03:09:07][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 03:10:16][level: info][info:Uncaught ErrorException: Undefined variable: a in D:\lening\1810b\api\controllers\EncryptController.class.php:96
+Stack trace:
+#0 D:\lening\1810b\api\controllers\EncryptController.class.php(96): Autoload->errorHandler(8, 'Undefined varia...', 'D:\\lening\\1810b...', 96, Array)
+#1 D:\lening\1810b\api\public\index.php(38): controllers\EncryptController->actionIndex()
+#2 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 96][time: 2019-06-26 03:44:45][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:44:45][level: info][info:Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267][time: 2019-06-26 03:44:56][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:44:56][level: info][info:Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267][time: 2019-06-26 03:45:10][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:45:10][level: info][info:Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267][time: 2019-06-26 03:45:24][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:45:24][level: info][info:Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267][time: 2019-06-26 03:45:24][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:45:24][level: info][info:Uncaught ErrorException: stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ��֪������������  in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:267
+Stack trace:
+#0 [internal function]: Autoload->errorHandler(2, 'stream_socket_c...', 'D:\\lening\\1810b...', 267, Array)
+#1 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(267): stream_socket_client('ssl://smtp.qq.c...', 0, 'php_network_get...', 30, 4, Resource id #114)
+#2 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 in D:\lening\1810b\api\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php on line 267][time: 2019-06-26 03:46:13][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19][time: 2019-06-26 03:46:13][level: info][info:Undefined index: PATH_INFO in D:\lening\1810b\api\libs\Route.class.php on line 19]

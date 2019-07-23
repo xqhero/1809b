@@ -1,0 +1,59 @@
+[25-Jun-2019 03:58:29 UTC] PHP Warning:  set_exception_handler() expects the argument (Autoload::exceptionHandler) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 18
+[25-Jun-2019 03:58:29 UTC] PHP Warning:  set_error_handler() expects the argument (Autoload::errorHandle) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 19
+[25-Jun-2019 03:58:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 03:58:35 UTC] PHP Warning:  set_exception_handler() expects the argument (Autoload::exceptionHandler) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 18
+[25-Jun-2019 03:58:35 UTC] PHP Warning:  set_error_handler() expects the argument (Autoload::errorHandle) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 19
+[25-Jun-2019 03:58:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method controllers\UserController::actionIndex() in D:\lening\1810b\api\public\index.php:29
+Stack trace:
+#0 {main}
+  thrown in D:\lening\1810b\api\public\index.php on line 29
+[25-Jun-2019 03:58:41 UTC] PHP Warning:  set_exception_handler() expects the argument (Autoload::exceptionHandler) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 18
+[25-Jun-2019 03:58:41 UTC] PHP Warning:  set_error_handler() expects the argument (Autoload::errorHandle) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 19
+[25-Jun-2019 03:58:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:22 UTC] PHP Warning:  set_exception_handler() expects the argument (Autoload::exceptionHandler) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 18
+[25-Jun-2019 04:00:22 UTC] PHP Warning:  set_error_handler() expects the argument (Autoload::errorHandle) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 19
+[25-Jun-2019 04:00:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:24 UTC] PHP Warning:  set_exception_handler() expects the argument (Autoload::exceptionHandler) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 18
+[25-Jun-2019 04:00:24 UTC] PHP Warning:  set_error_handler() expects the argument (Autoload::errorHandle) to be a valid callback in D:\lening\1810b\api\libs\Autoload.class.php on line 19
+[25-Jun-2019 04:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
+[25-Jun-2019 04:00:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function controllers\setLogs() in D:\lening\1810b\api\controllers\EncryptController.class.php:101
+Stack trace:
+#0 D:\lening\1810b\api\public\index.php(29): controllers\EncryptController->actionIndex()
+#1 {main}
+  thrown in D:\lening\1810b\api\controllers\EncryptController.class.php on line 101
